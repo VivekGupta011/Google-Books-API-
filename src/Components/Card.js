@@ -1,5 +1,6 @@
 import React,{ useState } from "react";
 import Modal from "./Modal";
+import {Footer} from './Footer';
 const Card = ({ book }) => {
 
     const [show,setShow]=useState(false);
@@ -32,6 +33,7 @@ const Card = ({ book }) => {
                     
                 })
             }
+           
 
         </>
     )

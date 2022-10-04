@@ -15,7 +15,7 @@ const Modal=({show,item,onClose})=>{
                     <div className="inner-box">
                         <img src={thumbnail} alt="" />
                         <div className="info">
-                            <h1>{item.volumeInfo.title}</h1>
+                            <h2>{item.volumeInfo.title}</h2>
                             <h3>{item.volumeInfo.authors}</h3>
                             <h4>{item.volumeInfo.publisher}<span>{item.volumeInfo.publishedDate}</span></h4><br/>
                             <a href={item.volumeInfo.previewLink} target="_blank"><button className='customLink'>More</button></a>

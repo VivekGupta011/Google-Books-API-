@@ -1,7 +1,6 @@
 import React ,{useState}from "react";
 import Card from "./Card";
 import Liblogo from './library.png';
-import {Footer} from './Footer';
 import axios from "axios";
 const Main=()=>{
     const [search,setSearch]=useState("");
@@ -58,7 +57,7 @@ const Main=()=>{
                     <Card book={bookData}/>
               }  
             </div>
-            <Footer />
+            
         </>
     )
 }

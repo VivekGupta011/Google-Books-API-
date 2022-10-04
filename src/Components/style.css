@@ -153,7 +153,8 @@ button.customLink {
   top: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
+  background-color: rgba(76, 103, 147,0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,7 +166,7 @@ button.customLink {
   padding: 1.5rem;
   position: relative;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
   font-size: 1.3rem;
 }
 .overlay-inner .close {
