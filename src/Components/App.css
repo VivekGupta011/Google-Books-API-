@@ -56,10 +56,11 @@ p.custom-paragraph {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 15px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: -16vh;
   display: flex;
   align-items: baseline;
+  justify-content: center;
   padding-left: 15px;
 }
 
