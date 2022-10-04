@@ -1,0 +1,236 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* self code */
+.Custom-Footer {
+  margin: 0 0;
+  padding: 2px 5px;
+  text-align: center;
+  background-color: rgba(225,225,225,0.8);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container.custom-container {
+  margin-bottom: 45vh;
+}
+p.custom-paragraph {
+  padding: 10px 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+html,body{
+  margin:0px;
+}
+ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0px 5px;
+}
+
+
+.cart-part{
+  background-color: orange;
+  border-radius: 15px;
+  padding:0px 6px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar{
+  flex-wrap: nowrap !important;
+}
+.btn-dark {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+}
+.btn-dark:hover{
+  color: black;
+  background-color: rgb(195, 158, 90);
+  border-color: rgb(228, 189, 115);
+  
+}
+p.HeroText {
+  font-size: 22px;
+  font-weight: 400;
+}
+.h1, h1 {
+  font-size: calc(2.375rem + 1.6vw);
+}
+
+.custom-img img{
+  width: 70%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Pricing.d-flex.justify-content-center {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: baseline;
+  width: 85%;
+  margin: 10px 9%;
+  padding: 0px 25px;
+}
+p span.custom-bg {
+  background-color: rgba(162, 148, 148,0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+button.btn.btn-custom {
+  background-color: orange;
+  border-radius: 7px;
+  padding: 2px 5px;
+  
+}
+.btn-custom1 {
+  background-color: rgb(63, 170, 116);
+  border-radius: 7px;
+  padding: 2px 5px;
+  color:black ;
+  border: none;
+  outline: none;
+  
+}
+
+a {
+  color: black; 
+  text-decoration: none;
+}
+
+.Custom-responsive {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 55px;
+}
+
+@media(max-width:992px) {
+  .Custom-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 55px;
+  }
+
+  
+}
+
+@media (max-width:768px) {
+
+  .Custom-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 55px;
+  }
+  .col-12.col-md-12.col-lg-6.d-flex.align-items-center.custom-responsive-hero {
+    justify-content: center;
+}
+.custom-img.d-flex {
+  flex-direction: column;
+  text-align: center;
+}
+.col-5.custom-single-product {
+  width: 90%;
+}
+.row.custom-row {
+  justify-content: center;
+}
+.Pricing.d-flex.flex-column {
+  align-items: center;
+}
+button.btn.btn-custom {
+  width: 70%;
+}
+p span.custom-bg {
+    padding: 3px 55px;
+}
+p.custom-paragraph{
+  font-size: 13px;
+}
+  
+}
+@media(max-width:576px){
+
+  /* .Custom-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 55px;
+  } */
+  button.btn.btn-custom {
+    width: 50%;
+}
+  
+}
+@media(max-width:425px){
+
+  .Custom-responsive {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 55px;
+  }
+  .Pricing.d-flex.justify-content-center {
+    display: flex !important;
+    /* justify-content: space-between !important; */
+    align-items: center;
+    flex-direction: column;
+    /* width: 88%; */
+    /* margin: 10px 9%; */
+    /* padding: 0px 25px; */
+}
+button.btn.btn-custom {
+  width: 100%;
+}
+p span.custom-bg {
+  padding: 5px 102px;
+}
+p.custom-paragraph{
+  font-size: 12px;
+}
+
+}
