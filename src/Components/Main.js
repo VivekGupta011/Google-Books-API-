@@ -41,13 +41,13 @@ const Main=()=>{
                         <input type="text" placeholder="Enter Your Book Name"
                         value={search} onChange={e=>setSearch(e.target.value)}
                         onKeyPress={searchBook}/>
-                        <button><i className="fas fa-search"></i></button>
+                        <button onClick={searchBook}><i className="fas fa-search"></i></button>
                     </div>
                     
                 </div>
             </div>
             
-            <h2 className="result"> Your Search Section:-</h2>
+            <h2 className="result"> Your Data Section:-</h2>
 
                 
 
