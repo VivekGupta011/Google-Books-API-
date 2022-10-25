@@ -47,6 +47,7 @@
   bottom: 0;
   display: flex;
   justify-content: center;
+  margin-top: 56px;
 }
 .container.custom-container {
   margin-bottom: 45vh;
@@ -99,6 +100,10 @@ a{
   border-color: rgb(228, 189, 115);
   
 }
+/* div#root {
+  position: absolute;
+  bottom: 0;
+} */
 p.HeroText {
   font-size: 22px;
   font-weight: 400;
@@ -145,6 +150,16 @@ button.btn.btn-custom {
 a {
   color: black; 
   text-decoration: none;
+}
+p.custom-paragraph {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+div#root {
+  min-height: 100vh;
 }
 
 .Custom-responsive {
