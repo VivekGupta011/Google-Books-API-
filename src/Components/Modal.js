@@ -5,7 +5,7 @@ const Modal=({show,item,onClose})=>{
         return null;
     }
 
-     // this concept coming from 'Short Circuit Evaluation with React'
+     // this concept coming from 'Short Circuit Evaluation with React' =>conditional rendering
     let thumbnail=item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
     return(
         <>

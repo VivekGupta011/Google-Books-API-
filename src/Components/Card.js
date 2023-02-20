@@ -12,13 +12,14 @@ const Card = ({ book }) => {
             {
                 book.map((item) => {
                     let thumbnail=item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
+                    console.log("thumb:"+thumbnail)
                     let amount=item.saleInfo.listPrice && item.saleInfo.listPrice.amount;
+                    console.log("amount:"+amount)
                     if(thumbnail!= undefined && amount !=undefined)
                     {
                         return (
                             
-                            <>
-                    
+                            <>  
                             <div className="card" onClick={()=>{setShow(true);setItem(item)}}>
                                 <img src={thumbnail} alt="" />
                                 <div className="bottom">

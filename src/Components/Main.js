@@ -8,13 +8,14 @@ const Main=()=>{
     const searchBook=(event)=>{
         if(event.key==="Enter")
         {
-            let letters = /^[A-Za-z]+$/;
+            let letters =/^\w+([ ]\w+)*$/;
             if(search ==="" || letters.test(search)){
+                // test() is regular function which return 'true or false'
                 axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyA6SaT23KNiiA6DnUfUQTvFeyAcQEkwnSU'+'&maxResults=40')
             .then(res=>setData(res.data.items))
             .catch(err=>console.log(err))
             }else{
-                alert("Ensure you are only using alphabets!");
+                alert("Ensure you are only using alphabets and not any extra white space!");
             }
         }
     }
