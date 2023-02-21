@@ -9,7 +9,7 @@ const Main = () => {
     // our result data
     function SearchResult() {
         let letters = /^\w+([ ]\w+)*$/;
-        if (search === "" || letters.test(search)) {
+        if (search === "" || letters.test(search.trim())) {
             // test() is regular function which return 'true or false'
             axios.get('https://www.googleapis.com/books/v1/volumes?q=' + search + '&key=AIzaSyA6SaT23KNiiA6DnUfUQTvFeyAcQEkwnSU' + '&maxResults=40')
                 .then(res => setData(res.data.items))
